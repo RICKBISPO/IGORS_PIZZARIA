@@ -11,4 +11,5 @@ configurações.
 Após a implementação, explique porque o objeto builder, destacado no exemplo acima, precisou seu instanciado
 duas vezes. Contemple na explicação como é o comportamento em memória dos objetos Pizza.Builder e Pizza.
 
-´´e´´
+R: No exemplo acima, o objeto Builder precisou ser instanciado duas vezes, pois caso não fosse, os dados da primeira Pizza criada atravez do Builder, seria replicado para os demais objtos de Pizza que vierao a seguir.
+Ambos as classes guardam seus atributos, porém, a classe Builder é exclusivamente feita para "alimentar" a classe Pizza, que por sua vez, depende da classe Builder para receber valores para seus atributos.
